@@ -17,6 +17,11 @@ Install Requirements
 pip install -r requirements.txt
 ```
 
+### Api Requiriments
+
+If you want to use OpenAi you should have a api key.
+Add on .env file with name `OPENAI_API_KEY`
+
 ### Usage
 
 ```bash
