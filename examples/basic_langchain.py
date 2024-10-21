@@ -1,6 +1,7 @@
-from llm_models.openai import create_model
-# from llm_models.ollama import create_model
 from langchain.prompts.prompt import PromptTemplate
+from llm_models.gemini import create_model
+# from llm_models.openai import create_model
+# from llm_models.ollama import create_model
 
 llm = create_model()
 
@@ -14,6 +15,3 @@ print(prompt)
 response = llm.invoke(prompt)
 
 print(response.content)
-
-# Chat Prompt Template
-template = "You are a helpful assistant that translates {input_language} to {output_language}."
