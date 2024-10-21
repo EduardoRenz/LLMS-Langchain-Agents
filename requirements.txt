@@ -5,5 +5,7 @@ langchain-openai
 langchain-ollama
 langchain-community
 langchain_google_genai
+langchainhub
 faiss-cpu
 pypdf
+pandas
