@@ -1,5 +1,8 @@
 ## Langchain AI Models
 
+![image](https://github.com/user-attachments/assets/4470d4e9-4748-412b-865a-95a0e7aa8261)
+
+
 This is a project that uses langchain to make AI agents
 
 ### Install
