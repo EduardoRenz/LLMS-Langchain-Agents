@@ -1,0 +1,40 @@
+Regras do LumoBall:
+1. Campo e Equipamento:
+
+O campo é circular, com 50 metros de diâmetro. No centro, há um círculo de 5 metros, chamado "Zona Neutra".
+Existem duas áreas de base opostas no campo, onde cada time começa.
+A bola de LumoBall tem sensores de luz e muda de cor quando tocada.
+Os jogadores usam pulseiras de LED que indicam a equipe à qual pertencem: azul ou vermelho.
+A iluminação do campo é controlada, podendo alternar entre luz total e escuridão completa.
+2. Objetivo:
+
+O objetivo principal é marcar pontos ao colocar a bola na "Zona Neutra" quando estiver iluminada pela cor da sua equipe.
+Cada vez que a bola é tocada por um jogador, ela muda de cor para representar a equipe daquele jogador.
+3. Início do Jogo:
+
+O jogo começa com a bola no centro da Zona Neutra, e ambos os times começam em suas respectivas bases.
+Quando o apito soa, os jogadores correm em direção ao centro para pegar a bola e começar o ataque.
+4. Alternância de Luz e Escuridão:
+
+A cada 2 minutos, o campo alterna entre luz e escuridão.
+Na luz, os jogadores podem se mover e passar a bola normalmente.
+Na escuridão, os jogadores só podem se mover, mas não podem passar a bola nem roubar de outro jogador.
+A bola brilha levemente na escuridão, mas só muda de cor no toque quando há luz.
+5. Pontuação:
+
+Para marcar um ponto, o time precisa colocar a bola na Zona Neutra enquanto a bola estiver da cor da equipe.
+Se a bola estiver da cor errada quando entrar na Zona Neutra, o time adversário ganha um ponto.
+6. Faltas e Penalidades:
+
+Não são permitidos contatos físicos agressivos (empurrões, derrubadas). Violação dessas regras resulta em uma falta, e o time adversário recebe a posse da bola.
+Um time que comete 3 faltas perde o direito de tocar na bola durante o próximo ciclo de escuridão.
+7. Duração:
+
+O jogo tem duas metades de 15 minutos, com um intervalo de 5 minutos entre elas.
+8. Substituições:
+
+Cada time tem 5 jogadores em campo e pode fazer até 3 substituições por jogo.
+9. Vencedor:
+
+O time que tiver mais pontos ao final das duas metades vence o jogo. Se houver empate, há uma prorrogação de 5 minutos, com uma única rodada de escuridão e luz. O time que marcar primeiro vence.
+LumoBall combina o uso criativo de luz e escuridão com o dinamismo de um esporte coletivo, trazendo um elemento tático inovador.
