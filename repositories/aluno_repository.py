@@ -9,5 +9,11 @@ def get_aluno(name):
     if dados_com_esse_estudante.empty:
         return {}
     return dados_com_esse_estudante.iloc[:1].to_dict()
-# aluno = get_aluno("pedro")
-# print(aluno)
+
+
+def get_nota_final(name):
+    dados = pd.read_csv("data/notas_finais.csv")
+    dados_com_esse_estudante = dados[dados["aluno"].str.lower() == name]
+    if dados_com_esse_estudante.empty:
+        return {}
+    return dados_com_esse_estudante.iloc[:1].to_dict()

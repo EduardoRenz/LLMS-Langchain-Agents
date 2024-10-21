@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 pergunta = "Em qual Ano Pedro ingressou?"
 pergunta = "Quais os dados de Luiza e de Pedro?"
+pergunta = "Quais os dados de Luiza e sua nota final?, se ela for superior a 7, diga que está aprovada"
+
 
 agente = AgenteOpenAIFunctions()
 executor = AgentExecutor(agent=agente.agente,
