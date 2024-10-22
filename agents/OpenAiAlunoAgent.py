@@ -6,7 +6,7 @@ from chain_domains.Aluno import DadosDeEstudante, DadosNotaFinal
 from llm_models.openai import create_model
 
 
-class AgenteOpenAIFunctions:
+class AlunoAgent:
     def __init__(self):
         llm = create_model()
 
