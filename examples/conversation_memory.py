@@ -1,7 +1,8 @@
-from llm_models.openai import create_model
+from llm_factory import create_model
 from langchain.globals import set_debug
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationSummaryMemory
+
 
 set_debug(False)
 llm = create_model()
