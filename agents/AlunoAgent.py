@@ -1,5 +1,5 @@
 # agente.py
-from langchain.agents import create_openai_tools_agent, create_react_agent
+from langchain.agents import create_openai_tools_agent, create_react_agent, create_tool_calling_agent
 from langchain import hub
 from langchain.agents import Tool
 from chain_domains.Aluno import DadosDeEstudante, DadosNotaFinal
@@ -23,5 +23,5 @@ class AlunoAgent:
 
         prompt = hub.pull("hwchase17/openai-functions-agent")
         # prompt = hub.pull("hwchase17/react")
-        self.agente = create_openai_tools_agent(llm, self.tools, prompt)
+        self.agente = create_tool_calling_agent(llm, self.tools, prompt)
         # self.agente = create_react_agent(llm, self.tools, prompt)

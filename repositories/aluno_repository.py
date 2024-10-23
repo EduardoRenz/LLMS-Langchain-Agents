@@ -8,7 +8,7 @@ def get_aluno(name):
     dados_com_esse_estudante = dados[dados["nome"].str.lower() == name]
     if dados_com_esse_estudante.empty:
         return {}
-    return dados_com_esse_estudante.iloc[:1].to_dict()
+    return dados_com_esse_estudante.iloc[:1].to_dict('records')[0]
 
 
 def get_nota_final(name):
@@ -16,4 +16,4 @@ def get_nota_final(name):
     dados_com_esse_estudante = dados[dados["aluno"].str.lower() == name]
     if dados_com_esse_estudante.empty:
         return {}
-    return dados_com_esse_estudante.iloc[:1].to_dict()
+    return dados_com_esse_estudante.iloc[:1].to_dict('records')[0]

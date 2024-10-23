@@ -1,7 +1,8 @@
 # main.py
 # %%
 from langchain.agents import AgentExecutor
-from agents.OpenAiAlunoAgent import AlunoAgent
+from agents.AlunoAgent import AlunoAgent
+from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -16,5 +17,5 @@ resposta = executor.invoke({"input": pergunta})
 print(resposta)
 
 # %%
-resposta['output']
+print(resposta['output'])
 # %%
