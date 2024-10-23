@@ -5,6 +5,7 @@ langchain-openai
 langchain-ollama
 langchain-community
 langchain_google_genai
+langchain_anthropic
 langchainhub
 faiss-cpu
 pypdf
