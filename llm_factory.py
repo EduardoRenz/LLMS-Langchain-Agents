@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-available_models = ['openai', 'gemini', 'ollama']
+available_models = ['openai', 'gemini', 'ollama', 'lmstudio']
 
 
 def create_model(model_name: str = os.getenv("LLM_MODEL")):
@@ -18,6 +18,13 @@ def create_model(model_name: str = os.getenv("LLM_MODEL")):
         return ChatOpenAI(
             model="gpt-4o-mini",
             api_key=os.getenv("OPENAI_API_KEY")
+        )
+
+    if model_name == 'lmstudio':
+        return ChatOpenAI(
+            model="any",
+            api_key='any',
+            base_url="http://192.168.4.10:1234/v1"
         )
 
     if model_name == 'gemini':
