@@ -1,6 +1,6 @@
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from llm_models.openai import create_model
+from llm_factory import create_model
 from langchain.tools import BaseTool
 import json
 from pydantic import BaseModel, Field

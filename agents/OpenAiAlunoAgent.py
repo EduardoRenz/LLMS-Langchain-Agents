@@ -3,7 +3,7 @@ from langchain.agents import create_openai_tools_agent, create_react_agent
 from langchain import hub
 from langchain.agents import Tool
 from chain_domains.Aluno import DadosDeEstudante, DadosNotaFinal
-from llm_models.openai import create_model
+from llm_factory import create_model
 
 
 class AlunoAgent:
