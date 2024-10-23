@@ -21,7 +21,7 @@ class AlunoAgent:
                  description=dados_nota_final.description),
         ]
 
-        # prompt = hub.pull("hwchase17/openai-functions-agent")
-        prompt = hub.pull("hwchase17/react")
-        # self.agente = create_openai_tools_agent(llm, self.tools, prompt)
-        self.agente = create_react_agent(llm, self.tools, prompt)
+        prompt = hub.pull("hwchase17/openai-functions-agent")
+        # prompt = hub.pull("hwchase17/react")
+        self.agente = create_openai_tools_agent(llm, self.tools, prompt)
+        # self.agente = create_react_agent(llm, self.tools, prompt)
