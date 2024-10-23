@@ -8,10 +8,10 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 
 from langchain_openai import OpenAIEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.chains.retrieval import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.prompts.chat import ChatPromptTemplate
 from langchain import hub
 
 set_debug(False)
@@ -27,11 +27,11 @@ splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 texts = splitter.split_documents(documents)
 
 # %%
-embeddings = OpenAIEmbeddings()
-# db = FAISS.from_documents(texts, embeddings)
+embeddings = OllamaEmbeddings(model="nomic-embed-text")
+db = FAISS.from_documents(texts, embeddings)
 # db.save_local("faiss_index")
-db = FAISS.load_local("faiss_index", embeddings,
-                      allow_dangerous_deserialization=True)
+# db = FAISS.load_local("faiss_index", embeddings,
+# allow_dangerous_deserialization=True)
 # %%
 retrieval_qa_chat_prompt = hub.pull("langchain-ai/retrieval-qa-chat")
 combine_docs_chain = create_stuff_documents_chain(
@@ -44,6 +44,6 @@ qa_chain = create_retrieval_chain(
 # %%
 question = "Qual a vantagem da grelha?"
 answer = qa_chain.invoke({"input": question})
-
+print(answer)
 
 # %%
