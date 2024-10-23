@@ -1,7 +1,5 @@
 from langchain.prompts.prompt import PromptTemplate
-from llm_models.gemini import create_model
-# from llm_models.openai import create_model
-# from llm_models.ollama import create_model
+from llm_factory import create_model
 
 llm = create_model()
 
