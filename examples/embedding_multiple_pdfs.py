@@ -1,6 +1,6 @@
 # This example show how to find texts in a document using indexes
 
-from llm_models.openai import create_model
+from llm_factory import create_model
 # from llm_models.ollama import create_model
 from langchain.globals import set_debug
 
