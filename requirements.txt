@@ -9,3 +9,5 @@ langchainhub
 faiss-cpu
 pypdf
 pandas
+playwright
+html2text
