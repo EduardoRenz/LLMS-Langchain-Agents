@@ -1,5 +1,5 @@
 # agente.py
-from langchain.agents import create_openai_tools_agent, create_react_agent, create_tool_calling_agent
+from langchain.agents import create_openai_tools_agent, create_react_agent, create_tool_calling_agent, create_structured_chat_agent
 from langchain import hub
 from langchain.agents import Tool
 from chain_domains.Aluno import DadosDeEstudante, DadosNotaFinal
@@ -21,7 +21,8 @@ class AlunoAgent:
                  description=dados_nota_final.description),
         ]
 
-        prompt = hub.pull("hwchase17/openai-functions-agent")
+        # prompt = hub.pull("hwchase17/openai-functions-agent")
         # prompt = hub.pull("hwchase17/react")
-        self.agente = create_tool_calling_agent(llm, self.tools, prompt)
+        prompt = hub.pull("hwchase17/structured-chat-agent")
+        self.agente = create_structured_chat_agent(llm, self.tools, prompt)
         # self.agente = create_react_agent(llm, self.tools, prompt)
