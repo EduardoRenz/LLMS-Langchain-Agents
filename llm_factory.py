@@ -30,7 +30,7 @@ def create_model(model_name: str = os.getenv("LLM_MODEL")):
 
     if model_name == 'gemini':
         return ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-2.0-flash-exp",
             api_key=os.getenv("GEMINI_API_KEY"),
         )
 
