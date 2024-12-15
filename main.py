@@ -4,16 +4,16 @@ from langchain.agents import AgentExecutor
 from agents.AlunoAgent import AlunoAgent
 from langchain_core.output_parsers import StrOutputParser
 from langchain.memory import ConversationBufferMemory
-from langchain.schema import SystemMessage
+
 from dotenv import load_dotenv
 load_dotenv()
 
-
+# %%
 memory = ConversationBufferMemory(
     return_messages=True, memory_key='chat_history')
 
-memory.chat_memory.add_message(SystemMessage(
-    content="Voce é um assitente da escola, e só sabe responder perguntas sobre os alunos"))
+memory.chat_memory.add_message(
+    "Voce é um assitente da escola, e só sabe responder perguntas sobre os alunos")
 
 # %%
 agente = AlunoAgent()
