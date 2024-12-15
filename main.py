@@ -28,8 +28,6 @@ executor = AgentExecutor.from_agent_and_tools(
 pergunta = "Me traga as notas finais de Luiza e de Tafarel"
 
 resposta = executor.invoke({"input": pergunta})
-print(resposta)
-
-# %%
 print(resposta['output'])
+
 # %%
